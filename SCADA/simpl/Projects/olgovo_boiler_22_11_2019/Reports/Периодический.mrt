@@ -1,0 +1,211 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<StiSerializer version="1.02" type="Net" application="StiReport">
+  <Dictionary Ref="1" type="Dictionary" isKey="true">
+    <BusinessObjects isList="true" count="0" />
+    <Databases isList="true" count="0" />
+    <DataSources isList="true" count="1">
+      <Данные Ref="2" type="DataTableSource" isKey="true">
+        <Alias>Данные</Alias>
+        <Columns isList="true" count="3">
+          <value>Время,System.DateTime</value>
+          <value>begin_W,System.Double</value>
+          <value>end_W,System.Double</value>
+        </Columns>
+        <Dictionary isRef="1" />
+        <Key>e34a2c8285a146e98b75724c0f1f96e7</Key>
+        <Name>Данные</Name>
+        <NameInSource>Simple-Scada Base.Данные</NameInSource>
+      </Данные>
+    </DataSources>
+    <Relations isList="true" count="0" />
+    <Report isRef="0" />
+    <Resources isList="true" count="0" />
+    <Variables isList="true" count="3">
+      <value>,Данные_Начало,Данные_Начало,,System.DateTime,_x0031_2_x002F_2_x002F_2019_x0020_1:01:17_x0020_PM,False,False,False,False,,,True</value>
+      <value>,Данные_Конец,Данные_Конец,,System.DateTime,_x0031_2_x002F_3_x002F_2019_x0020_1:01:17_x0020_PM,False,False,False,False,,,True</value>
+      <value>,Данные_Интервал,Данные_Интервал,,System.Int64,_x0036_0,False,False,False,False,,,True</value>
+    </Variables>
+  </Dictionary>
+  <EngineVersion>EngineV2</EngineVersion>
+  <GlobalizationStrings isList="true" count="0" />
+  <Key>5d2ad27ba04e4cc7815be942b48016a1</Key>
+  <MetaTags isList="true" count="0" />
+  <Pages isList="true" count="1">
+    <Page1 Ref="3" type="Page" isKey="true">
+      <Border>None;Black;2;Solid;False;4;Black</Border>
+      <Brush>Transparent</Brush>
+      <Components isList="true" count="3">
+        <ReportTitleBand1 Ref="4" type="ReportTitleBand" isKey="true">
+          <Brush>Transparent</Brush>
+          <ClientRectangle>0,0.4,19,0.8</ClientRectangle>
+          <Components isList="true" count="1">
+            <Text1 Ref="5" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>5,0.2,9,0.6</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,16</Font>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text1</Name>
+              <Page isRef="3" />
+              <Parent isRef="4" />
+              <Text>Производительность утилизатора</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+            </Text1>
+          </Components>
+          <Conditions isList="true" count="0" />
+          <Name>ReportTitleBand1</Name>
+          <Page isRef="3" />
+          <Parent isRef="3" />
+        </ReportTitleBand1>
+        <HeaderДанные Ref="6" type="HeaderBand" isKey="true">
+          <Brush>Transparent</Brush>
+          <ClientRectangle>0,2,19,0.8</ClientRectangle>
+          <Components isList="true" count="2">
+            <HeaderДанные_Время Ref="7" type="Text" isKey="true">
+              <Border>All;Black;1;Solid;False;4;Black</Border>
+              <Brush>Transparent</Brush>
+              <ClientRectangle>0,0,9.6,0.8</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,10,Bold</Font>
+              <Margins>0,0,0,0</Margins>
+              <Name>HeaderДанные_Время</Name>
+              <Page isRef="3" />
+              <Parent isRef="6" />
+              <Text>Период</Text>
+              <TextBrush>Black</TextBrush>
+              <TextOptions>,,,,WordWrap=True,A=0</TextOptions>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </HeaderДанные_Время>
+            <HeaderДанные_proizvoditelnost_util Ref="8" type="Text" isKey="true">
+              <Border>All;Black;1;Solid;False;4;Black</Border>
+              <Brush>Transparent</Brush>
+              <ClientRectangle>9.6,0,9.4,0.8</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,10,Bold</Font>
+              <Margins>0,0,0,0</Margins>
+              <Name>HeaderДанные_proizvoditelnost_util</Name>
+              <Page isRef="3" />
+              <Parent isRef="6" />
+              <Text>Производительность</Text>
+              <TextBrush>Black</TextBrush>
+              <TextOptions>,,,,WordWrap=True,A=0</TextOptions>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </HeaderДанные_proizvoditelnost_util>
+          </Components>
+          <Conditions isList="true" count="0" />
+          <Name>HeaderДанные</Name>
+          <Page isRef="3" />
+          <Parent isRef="3" />
+        </HeaderДанные>
+        <DataДанные Ref="9" type="DataBand" isKey="true">
+          <Brush>Transparent</Brush>
+          <BusinessObjectGuid isNull="true" />
+          <ClientRectangle>0,3.6,19,0.8</ClientRectangle>
+          <Components isList="true" count="2">
+            <DataДанные_Время Ref="10" type="Text" isKey="true">
+              <Border>All;Black;1;Solid;False;4;Black</Border>
+              <Brush>Transparent</Brush>
+              <CanGrow>True</CanGrow>
+              <ClientRectangle>0,0,9.6,0.8</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,8</Font>
+              <Margins>0,0,0,0</Margins>
+              <Name>DataДанные_Время</Name>
+              <Page isRef="3" />
+              <Parent isRef="9" />
+              <Text>{Данные_Начало}{"  -  "}{Данные_Конец}</Text>
+              <TextBrush>Black</TextBrush>
+              <TextOptions>,,,,WordWrap=True,A=0</TextOptions>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </DataДанные_Время>
+            <DataДанные_proizvoditelnost_util Ref="11" type="Text" isKey="true">
+              <Border>All;Black;1;Solid;False;4;Black</Border>
+              <Brush>Transparent</Brush>
+              <CanGrow>True</CanGrow>
+              <ClientRectangle>9.6,0,9.4,0.8</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,8</Font>
+              <Margins>0,0,0,0</Margins>
+              <Name>DataДанные_proizvoditelnost_util</Name>
+              <Page isRef="3" />
+              <Parent isRef="9" />
+              <Text>{Данные.end_W-Данные.begin_W}</Text>
+              <TextBrush>Black</TextBrush>
+              <TextFormat Ref="12" type="NumberFormat" isKey="true">
+                <DecimalDigits>4</DecimalDigits>
+                <DecimalSeparator>,</DecimalSeparator>
+                <GroupSeparator> </GroupSeparator>
+                <NegativePattern>1</NegativePattern>
+                <State>DecimalDigits</State>
+              </TextFormat>
+              <TextOptions>,,,,WordWrap=True,A=0</TextOptions>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </DataДанные_proizvoditelnost_util>
+          </Components>
+          <Conditions isList="true" count="0" />
+          <DataSourceName>Данные</DataSourceName>
+          <Filters isList="true" count="0" />
+          <Name>DataДанные</Name>
+          <Page isRef="3" />
+          <Parent isRef="3" />
+          <Sort isList="true" count="0" />
+        </DataДанные>
+      </Components>
+      <Conditions isList="true" count="0" />
+      <Guid>2bf76b13710e4a4c822b22a3207bcd44</Guid>
+      <Margins>1,1,1,1</Margins>
+      <Name>Page1</Name>
+      <PageHeight>29.7</PageHeight>
+      <PageWidth>21</PageWidth>
+      <Report isRef="0" />
+    </Page1>
+  </Pages>
+  <ReferencedAssemblies isList="true" count="8">
+    <value>System.Dll</value>
+    <value>System.Drawing.Dll</value>
+    <value>System.Windows.Forms.Dll</value>
+    <value>System.Data.Dll</value>
+    <value>System.Xml.Dll</value>
+    <value>Stimulsoft.Controls.Dll</value>
+    <value>Stimulsoft.Base.Dll</value>
+    <value>Stimulsoft.Report.Dll</value>
+  </ReferencedAssemblies>
+  <ReportAlias>Периодический</ReportAlias>
+  <ReportChanged>12/3/2019 2:53:24 PM</ReportChanged>
+  <ReportCreated>12/3/2019 1:00:54 PM</ReportCreated>
+  <ReportFile>C:\Users\User\Documents\Simple-Scada 2 (time-demo)\Projects\olgovo_boiler_22_11_2019\Reports\Периодический.mrt</ReportFile>
+  <ReportGuid>931dca3da6f84222b516639cbf172268</ReportGuid>
+  <ReportName>Периодический</ReportName>
+  <ReportUnit>Centimeters</ReportUnit>
+  <ReportVersion>2019.3.1.0</ReportVersion>
+  <Script>using System;
+using System.Drawing;
+using System.Windows.Forms;
+using System.Data;
+using Stimulsoft.Controls;
+using Stimulsoft.Base.Drawing;
+using Stimulsoft.Report;
+using Stimulsoft.Report.Dialogs;
+using Stimulsoft.Report.Components;
+
+namespace Reports
+{
+    public class Периодический : Stimulsoft.Report.StiReport
+    {
+        public Периодический()        {
+            this.InitializeComponent();
+        }
+
+        #region StiReport Designer generated code - do not modify
+		#endregion StiReport Designer generated code - do not modify
+    }
+}
+</Script>
+  <ScriptLanguage>CSharp</ScriptLanguage>
+  <Styles isList="true" count="0" />
+</StiSerializer>
